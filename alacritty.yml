@@ -1,0 +1,128 @@
+env:
+  TERM: alacritty
+
+live_config_reload: true
+
+shell:
+  program: C:\Program Files\PowerShell\7-preview\pwsh.exe
+
+working_directory: "C:/Users/ThinkPad/Desktop/"
+
+# colortheme
+import:
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_frappe.yaml
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_latte.yaml
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_macchiato.yaml
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_mocha.yaml
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/afterglow.yaml
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/gruvbox_dark.yaml
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/everforest_dark.yaml
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/nightfox.yaml
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/tokyo-night-storm.yaml
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/dracula.yaml
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/solarized_dark.yaml
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/base16_default_dark.yaml
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/deep_space.yaml
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/gruvbox_material_medium_dark.yaml
+ 
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/github_dark_dimmed.yaml
+ - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/kanagawa_dragon.yaml
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/zenburn.yaml
+
+# window
+window:
+  # opacity: 1.0
+  opacity: 0.95
+  startup_mode: Windowed # Windowed Fullscreen Maximized
+  decorations: Full      # Full None
+  dimensions:
+   columns: 150
+   lines: 34
+  position:
+    x: 130
+    y: 150
+  padding:
+    x: 2
+    y: 2
+  dynamic_padding: false
+  dynamic_title: true
+
+# font
+font:
+  size: 12
+  normal:
+    family: "Delugia Mono"
+    style: Regular
+  bold:
+    family: "Delugia Mono"
+    style: Bold
+  italic:
+    family: "Delugia Mono"
+    style: Italic
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+  debug:
+    persistent_logging: false
+
+  fallback:
+    - family: "inconsolatago qihei nf"
+
+draw_bold_text_with_bright_colors: true
+
+# cursor
+cursor:
+  style: Block # Block Beam Underline
+  unfocused_hollow: true
+
+# scrolling
+scrolling:
+  history: 10000
+  multiplier: 3
+
+# bell
+bell:
+  animation: EaseOutExpo
+  duration: 0
+
+# mouse
+double_click: { threshold: 300 }
+triple_click: { threshold: 300 }
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>"
+
+# key
+key_bindings:
+
+  # scroll
+  - {key: K, mods: Control|Shift, action: ScrollLineUp, mode: ~Alt}
+  - {key: J, mods: Control|Shift, action: ScrollLineDown, mode: ~Alt}
+
+  # move - alt:h,j,k,l
+  - { key: K, mods: ALT, chars: "\x1B[A" } # up
+  - { key: J, mods: ALT, chars: "\x1B[B" } # down
+  - { key: H, mods: ALT, chars: "\x1B[D" } # left
+  - { key: L, mods: ALT, chars: "\x1B[C" } # right
+
+  # delete word
+  - { key: Back, mods: Control, chars: "\x17" } # Delete whole word backwards
+
+
+
+# alacritty映射特性：
+# 映射ALT-J为F10,a  映射ALT-K为F10,b
+# - { key: J, mods: ALT, chars: "\x1b[21~a" } # F10,a
+# - { key: K, mods: ALT, chars: "\x1b[21~b" } # F10,b
+# 映射PSReadline的HistorySearchForward为F10,a
+# 映射PSReadline的HistorySearchBackward为F10,b
+# Set-PSReadLineKeyHandler -Chord 'F10,a' -Function HistorySearchForward
+# Set-PSReadLineKeyHandler -Chord 'F10,b' -Function HistorySearchBackward
+# 最终实现：ALT-J为HistorySearchForward, ALT-K为HistorySearchBackward
+
+
+
+
