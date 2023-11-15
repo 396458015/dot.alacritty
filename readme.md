@@ -23,4 +23,16 @@
     注: 由于alacritty使用的是win10自带的'conhost.exe',该程序不支持鼠标,而wezterm或winodws terminal中的'OpenConsole.exe'支持。
 
 
+### 优点
+- 速度最快的终端
+- 占用内存较低
+- 配置简单
+
+### 缺点
+- 不能显示lf和lazygit内的中文
+- Windowed full模式不美观,不能切换隐藏tabbar快捷键
+- 不支持neovim<C-space>快捷键
+- 部分快捷键映射繁琐
+
+
 
