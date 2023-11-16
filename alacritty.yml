@@ -10,7 +10,7 @@ working_directory: "C:/Users/ThinkPad/Desktop/"
 
 # colortheme
 import:
- # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_frappe.yaml
+ - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_frappe.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_latte.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_macchiato.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_mocha.yaml
@@ -26,13 +26,13 @@ import:
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/gruvbox_material_medium_dark.yaml
  
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/github_dark_dimmed.yaml
- - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/kanagawa_dragon.yaml
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/kanagawa_dragon.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/zenburn.yaml
 
 # window
 window:
   # opacity: 1.0
-  opacity: 0.95
+  opacity: 0.9
   startup_mode: Windowed # Windowed Fullscreen Maximized
   decorations: Full      # Full None
   dimensions:
