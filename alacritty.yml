@@ -10,8 +10,8 @@ working_directory: "C:/Users/ThinkPad/Desktop/"
 
 # colortheme
 import:
- - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_frappe.yaml
- # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_latte.yaml
+# dark
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/gruvbox_material_medium_dark.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_macchiato.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_mocha.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/afterglow.yaml
@@ -23,16 +23,24 @@ import:
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/solarized_dark.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/base16_default_dark.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/deep_space.yaml
- # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/gruvbox_material_medium_dark.yaml
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_frappe.yaml
  
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/github_dark_dimmed.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/kanagawa_dragon.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/zenburn.yaml
+# light
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/github_light.yaml
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/rose-pine-dawn.yaml
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/papercolor_light.yaml
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/ayu_light.yaml
+ - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_latte.yaml
+
+
 
 # window
 window:
   # opacity: 1.0
-  opacity: 0.9
+  opacity: 0.93
   startup_mode: Windowed # Windowed Fullscreen Maximized
   decorations: Full      # Full None
   dimensions:
