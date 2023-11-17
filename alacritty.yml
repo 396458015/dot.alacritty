@@ -4,7 +4,7 @@ env:
 live_config_reload: true
 
 shell:
-  program: C:\Program Files\PowerShell\7-preview\pwsh.exe
+  program: C:\Program Files\PowerShell\7\pwsh.exe
 
 working_directory: "C:/Users/ThinkPad/Desktop/"
 
