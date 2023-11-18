@@ -107,8 +107,8 @@ selection:
 key_bindings:
 
   # scroll
-  - {key: K, mods: Control|Shift, action: ScrollLineUp, mode: ~Alt}
-  - {key: J, mods: Control|Shift, action: ScrollLineDown, mode: ~Alt}
+  - {key: I, mods: Control|Shift, action: ScrollLineUp, mode: ~Alt}
+  - {key: U, mods: Control|Shift, action: ScrollLineDown, mode: ~Alt}
 
   # move - alt:h,j,k,l
   - { key: K, mods: ALT, chars: "\x1B[A" } # up
