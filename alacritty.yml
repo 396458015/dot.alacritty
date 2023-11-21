@@ -23,24 +23,25 @@ import:
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/solarized_dark.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/base16_default_dark.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/deep_space.yaml
- # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_frappe.yaml
+ - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_frappe.yaml
  
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/github_dark_dimmed.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/kanagawa_dragon.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/zenburn.yaml
+ 
 # light
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/github_light.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/rose-pine-dawn.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/papercolor_light.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/ayu_light.yaml
- - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_latte.yaml
+ # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_latte.yaml
 
 
 
 # window
 window:
   # opacity: 1.0
-  opacity: 0.93
+  opacity: 0.97
   startup_mode: Windowed # Windowed Fullscreen Maximized
   decorations: Full      # Full None
   dimensions:
@@ -57,7 +58,7 @@ window:
 
 # font
 font:
-  size: 12
+  size: 14
   normal:
     family: "Delugia Mono"
     style: Regular
@@ -77,7 +78,9 @@ font:
     persistent_logging: false
 
   fallback:
-    - family: "inconsolatago qihei nf"
+    # - family: "inconsolatago qihei nf"
+    # - family: "Noto Sans Mono CJK SC"
+    - family: "LXGW WenKai Mono"
 
 draw_bold_text_with_bright_colors: true
 
@@ -119,7 +122,8 @@ key_bindings:
   # delete word
   - { key: Back, mods: Control, chars: "\x17" } # Delete whole word backwards
 
-
+  # new terminal
+  - { key: N, mods: Control|Shift, action: SpawnNewInstance }
 
 # alacritty映射特性：
 # 映射ALT-J为F10,a  映射ALT-K为F10,b
