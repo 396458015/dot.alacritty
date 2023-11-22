@@ -45,8 +45,8 @@ window:
   startup_mode: Windowed # Windowed Fullscreen Maximized
   decorations: Full      # Full None
   dimensions:
-   columns: 150
-   lines: 34
+   columns: 110
+   lines: 29
   position:
     x: 130
     y: 150
@@ -78,9 +78,9 @@ font:
     persistent_logging: false
 
   fallback:
+    - family: "Noto Sans Mono CJK SC"
     # - family: "inconsolatago qihei nf"
-    # - family: "Noto Sans Mono CJK SC"
-    - family: "LXGW WenKai Mono"
+    # - family: "LXGW WenKai Mono"
 
 draw_bold_text_with_bright_colors: true
 
