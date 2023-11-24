@@ -45,8 +45,8 @@ window:
   startup_mode: Windowed # Windowed Fullscreen Maximized
   decorations: Full      # Full None
   dimensions:
-   columns: 110
-   lines: 29
+   columns: 127
+   lines: 34
   position:
     x: 130
     y: 150
@@ -58,7 +58,7 @@ window:
 
 # font
 font:
-  size: 14
+  size: 13
   normal:
     family: "Delugia Mono"
     style: Regular
