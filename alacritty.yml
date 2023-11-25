@@ -7,6 +7,7 @@ shell:
   program: C:\Program Files\PowerShell\7\pwsh.exe
 
 working_directory: "C:/Users/ThinkPad/Desktop/"
+# working_directory: None
 
 # colortheme
 import:
@@ -24,11 +25,11 @@ import:
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/base16_default_dark.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/deep_space.yaml
  - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_frappe.yaml
- 
+
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/github_dark_dimmed.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/kanagawa_dragon.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/zenburn.yaml
- 
+
 # light
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/github_light.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/rose-pine-dawn.yaml
