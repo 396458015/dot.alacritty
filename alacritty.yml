@@ -41,7 +41,7 @@ import:
 
 # window
 window:
-  opacity: 0.97 #0.97
+  opacity: 0.97 # 0.97
   startup_mode: Windowed # Windowed Fullscreen Maximized
   decorations: None      # Full None
   dimensions:
