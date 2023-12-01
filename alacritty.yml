@@ -41,10 +41,9 @@ import:
 
 # window
 window:
-  # opacity: 1.0
-  opacity: 0.97
+  opacity: 0.97 #0.97
   startup_mode: Windowed # Windowed Fullscreen Maximized
-  decorations: Full      # Full None
+  decorations: None      # Full None
   dimensions:
    columns: 127
    lines: 34
