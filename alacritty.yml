@@ -9,9 +9,9 @@ shell:
 working_directory: "C:/Users/ThinkPad/Desktop/"
 # working_directory: None
 
-# colortheme
+# colorscheme
 import:
-# dark
+ # dark
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/gruvbox_material_medium_dark.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_macchiato.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_mocha.yaml
@@ -24,19 +24,18 @@ import:
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/solarized_dark.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/base16_default_dark.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/deep_space.yaml
- - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_frappe.yaml
 
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/github_dark_dimmed.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/kanagawa_dragon.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/zenburn.yaml
+ - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_frappe.yaml
 
-# light
+ # light
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/github_light.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/rose-pine-dawn.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/papercolor_light.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/ayu_light.yaml
  # - C:/Users/ThinkPad/AppData/Roaming/alacritty/theme/themes/catppuccin_latte.yaml
-
 
 
 window:
@@ -129,7 +128,6 @@ key_bindings:
 # Set-PSReadLineKeyHandler -Chord 'F10,a' -Function HistorySearchForward
 # Set-PSReadLineKeyHandler -Chord 'F10,b' -Function HistorySearchBackward
 # 最终实现：ALT-J为HistorySearchForward, ALT-K为HistorySearchBackward
-
 
 
 
