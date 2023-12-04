@@ -43,11 +43,11 @@ window:
   startup_mode: Windowed # Windowed Fullscreen Maximized
   decorations: None      # Full None
   dimensions:
-   columns: 127
-   lines: 34
+    columns: 128
+    lines: 36
   position:
-    x: 130
-    y: 150
+    x: 190
+    y: 90
   padding:
     x: 2
     y: 2
