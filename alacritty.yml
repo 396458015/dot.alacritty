@@ -119,6 +119,10 @@ key_bindings:
   # new terminal
   - { key: N, mods: Control|Shift, action: SpawnNewInstance }
 
+  # paste copy
+  - { key: V, mods: Control|Shift, action: Paste }
+  - { key: C, mods: Control|Shift, action: Copy }
+
 # alacritty映射特性：
 # 映射ALT-J为F10,a  映射ALT-K为F10,b
 # - { key: J, mods: ALT, chars: "\x1b[21~a" } # F10,a
