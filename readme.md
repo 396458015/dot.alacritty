@@ -34,5 +34,8 @@
 - 不支持neovim<C-space>快捷键
 - 部分快捷键映射繁琐
 
+### 问题:  
+使用使Listary打开alacritty时，yazi无法正常打开视频播放。  
+解决办法:Listary自定义alacritty命令时，勾选下面的'以管理员权限执行'  
 
 
