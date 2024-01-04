@@ -123,6 +123,16 @@ key_bindings:
   - { key: V, mods: Control|Shift, action: Paste }
   - { key: C, mods: Control|Shift, action: Copy }
 
+  # Control+Return & Control+Space
+  # https://stackoverflow.com/a/42461580
+  # https://github.com/oryband/dotfiles/blob/af4d45734e7eca30457f5025567221b91ed7f208/.config/alacritty/alacritty.yml#L21
+  # - { key: Return, mods: Shift,   chars: "\x1b[13;2u" } # Shift + Return
+  - { key: Return, mods: Control, chars: "\x1b[13;5u" } # Control + Return
+  # - { key: Space, mods: Shift, chars: "\x1b[32;2u" } # Shift + Space
+  - { key: Space, mods: Control, chars: "\x1b[32;5u" } # Control + Space
+
+  # - { key: Space, mods: Control, chars: "\x00" } # not work
+
 # alacritty映射特性：
 # 映射ALT-J为F10,a  映射ALT-K为F10,b
 # - { key: J, mods: ALT, chars: "\x1b[21~a" } # F10,a
