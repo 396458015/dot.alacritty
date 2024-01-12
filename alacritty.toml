@@ -8,7 +8,7 @@ import = [
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/gruvbox_dark.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/everforest_dark.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/nightfox.toml",
-  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/tokyo-night-storm.toml",
+  "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/tokyo-night-storm.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/dracula.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/solarized_dark.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/base16_default_dark.toml",
@@ -17,7 +17,7 @@ import = [
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/github_dark_dimmed.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/kanagawa_dragon.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/zenburn.toml",
-  "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/catppuccin_frappe.toml",
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/catppuccin_frappe.toml",
 
   # light
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/github_light.toml",
@@ -28,7 +28,7 @@ import = [
 ]
 
 live_config_reload = true
-working_directory = "C:/Users/ThinkPad/Desktop/"
+working_directory  = "C:/Users/ThinkPad/Desktop/"
 
 [env]
 TERM = "alacritty"
@@ -37,61 +37,48 @@ TERM = "alacritty"
 program = 'C:\Program Files\PowerShell\7\pwsh.exe'
 
 [window]
-opacity = 0.95
-startup_mode = "Windowed" # Windowed Fullscreen Maximized
-decorations = "None" # Full None
+opacity         = 0.95
+blur            = false
+startup_mode    = "Windowed" # Windowed Fullscreen Maximized
+decorations     = "None" # Full None
 dynamic_padding = false
-dynamic_title = true
-
-[window.dimensions]
-columns = 128
-lines = 36
-
-[window.position]
-x = 190
-y = 90
-
-[window.padding]
-x = 2
-y = 2
+dynamic_title   = true
+padding         = { x = 2, y = 2 }
+position        = { x = 190, y = 90 }
+dimensions      = { columns = 128, lines = 36 }
 
 [font]
-size = 13
-
-[font.normal]
-family = "Delugia Mono"
-style = "Regular"
-
-[font.bold]
-family = "Delugia Mono"
-style = "Bold"
-
-[font.italic]
-family = "Delugia Mono"
-style = "Italic"
-
-[font.glyph_offset]
-x = 0
-y = 0
-
-[font.offset]
-x = 0
-y = 0
+size                = 13.0
+normal              = { family = "Delugia Mono", style = "Regular" }
+bold                = { family = "Delugia Mono", style = "Bold" }
+italic              = { family = "Delugia Mono", style = "Italic" }
+bold_italic         = { family = "Delugia Mono", style = "Bold Italic" }
+glyph_offset        = { x = 0, y = 0 }
+offset              = { x = 0, y = 0 }
+builtin_box_drawing = true
 
 [cursor]
-style = "Block" # Block Beam Underline
+style = { shape = "Block", blinking = "Off" } # Block Beam Underline
 unfocused_hollow = true
 
 [scrolling]
-history = 10000
+history    = 10000
 multiplier = 3
 
 [bell]
 animation = "EaseOutExpo"
-duration = 0
+duration  = 0
 
 [colors]
 draw_bold_text_with_bright_colors = true
+transparent_background_colors     = true
+primary = { background = '#1e1e2e' }
+cursor  = { cursor = '#abb2bf' }
+vi_mode_cursor = { text = "#1e1e2e", cursor = "#b96167"}
+
+[colors.search]
+focused_match = { foreground = "#44475A", background = "#d94453" }
+matches       = { foreground = "#44475A", background = "#50FA7B" }
 
 [selection]
 semantic_escape_chars = ",│`|:\"' ()[]{}<>"
@@ -99,91 +86,40 @@ semantic_escape_chars = ",│`|:\"' ()[]{}<>"
 [mouse]
 hide_when_typing = true
 
-# keyboard
-# --------- scroll ---------
-[[keyboard.bindings]]
-action = "ScrollLineUp"
-key = "I"
-mode = "~Alt"
-mods = "Control|Shift"
+[keyboard]
+bindings = [
+# scroll
+  {key = "I", mods = "Control|Shift", mode = "~Alt", action = "ScrollLineUp"},
+  {key = "U", mods = "Control|Shift", mode = "~Alt", action = "ScrollLineDown"},
+# move - alt:h,j,k,l
+  {key = "K", mods = "ALT", chars = "\u001B[A"},
+  {key = "J", mods = "ALT", chars = "\u001B[B"},
+  {key = "H", mods = "ALT", chars = "\u001B[D"},
+  {key = "L", mods = "ALT", chars = "\u001B[C"},
+# delete word
+  {key = "Back", mods = "Control", chars = "\u0017"},
+# new terminal
+  {key = "N", mods = "Control|Shift", action = "SpawnNewInstance"},
+# paste copy
+  {key = "V", mods = "Control|Shift", action = "Paste"},
+  {key = "C", mods = "Control|Shift", action = "Copy"},
 
-[[keyboard.bindings]]
-action = "ScrollLineDown"
-key = "U"
-mode = "~Alt"
-mods = "Control|Shift"
+# Control+Return
+  {key = "Return", mods = "Control", chars = "\u001B[13;5u"},
+# Shift + Return
+  {key = "Return", mods = "Shift", chars = "\u001B[13;2u"},
+# Control+Space
+  {key = "Space", mods = "Control", chars = "\u001B[32;5u"},
+# Shift + Space
+  {key = "Space", mods = "Shift", chars = "\u001B[32;2u"},
 
-# --------- move - alt:h,j,k,l ---------
-[[keyboard.bindings]]
-chars = "\u001B[A"
-key = "K"
-mods = "ALT"
-
-[[keyboard.bindings]]
-chars = "\u001B[B"
-key = "J"
-mods = "ALT"
-
-[[keyboard.bindings]]
-chars = "\u001B[D"
-key = "H"
-mods = "ALT"
-
-[[keyboard.bindings]]
-chars = "\u001B[C"
-key = "L"
-mods = "ALT"
-
-# --------- delete word ---------
-[[keyboard.bindings]]
-chars = "\u0017"
-key = "Back"
-mods = "Control"
-
-# --------- new terminal ---------
-[[keyboard.bindings]]
-action = "SpawnNewInstance"
-key = "N"
-mods = "Control|Shift"
-
-# --------- paste copy ---------
-[[keyboard.bindings]]
-action = "Paste"
-key = "V"
-mods = "Control|Shift"
-
-[[keyboard.bindings]]
-action = "Copy"
-key = "C"
-mods = "Control|Shift"
-
-# ------------------
 # https://stackoverflow.com/a/42461580
 # https://github.com/oryband/dotfiles/blob/af4d45734e7eca30457f5025567221b91ed7f208/.config/alacritty/alacritty.yml#L21
 
-# Control+Return
-[[keyboard.bindings]]
-chars = "\u001B[13;5u"
-key = "Return"
-mods = "Control"
+]
 
-# Shift + Return
-# [[keyboard.bindings]]
-# chars = "\u001B[13;2u"
-# key = "Return"
-# mods = "Shift"
 
-# Control+Space
-[[keyboard.bindings]]
-chars = "\u001B[32;5u"
-key = "Space"
-mods = "Control"
 
-# Shift + Space
-# [[keyboard.bindings]]
-# chars = "\u001B[32;2u"
-# key = "Space"
-# mods = "Shift"
 
 
 
