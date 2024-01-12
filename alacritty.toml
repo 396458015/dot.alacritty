@@ -1,0 +1,199 @@
+# theme
+import = [
+  # dark
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/gruvbox_material_medium_dark.toml",
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/catppuccin_macchiato.toml",
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/catppuccin_mocha.toml",
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/afterglow.toml",
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/gruvbox_dark.toml",
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/everforest_dark.toml",
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/nightfox.toml",
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/tokyo-night-storm.toml",
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/dracula.toml",
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/solarized_dark.toml",
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/base16_default_dark.toml",
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/deep_space.toml",
+
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/github_dark_dimmed.toml",
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/kanagawa_dragon.toml",
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/zenburn.toml",
+  "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/catppuccin_frappe.toml",
+
+  # light
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/github_light.toml",
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/rose-pine-dawn.toml",
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/papercolor_light.toml",
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/ayu_light.toml",
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/catppuccin_latte.toml",
+]
+
+live_config_reload = true
+working_directory = "C:/Users/ThinkPad/Desktop/"
+
+[env]
+TERM = "alacritty"
+
+[shell]
+program = 'C:\Program Files\PowerShell\7\pwsh.exe'
+
+[window]
+opacity = 0.95
+startup_mode = "Windowed" # Windowed Fullscreen Maximized
+decorations = "None" # Full None
+dynamic_padding = false
+dynamic_title = true
+
+[window.dimensions]
+columns = 128
+lines = 36
+
+[window.position]
+x = 190
+y = 90
+
+[window.padding]
+x = 2
+y = 2
+
+[font]
+size = 13
+
+[font.normal]
+family = "Delugia Mono"
+style = "Regular"
+
+[font.bold]
+family = "Delugia Mono"
+style = "Bold"
+
+[font.italic]
+family = "Delugia Mono"
+style = "Italic"
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.offset]
+x = 0
+y = 0
+
+[cursor]
+style = "Block" # Block Beam Underline
+unfocused_hollow = true
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[bell]
+animation = "EaseOutExpo"
+duration = 0
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>"
+
+[mouse]
+hide_when_typing = true
+
+# keyboard
+# --------- scroll ---------
+[[keyboard.bindings]]
+action = "ScrollLineUp"
+key = "I"
+mode = "~Alt"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "ScrollLineDown"
+key = "U"
+mode = "~Alt"
+mods = "Control|Shift"
+
+# --------- move - alt:h,j,k,l ---------
+[[keyboard.bindings]]
+chars = "\u001B[A"
+key = "K"
+mods = "ALT"
+
+[[keyboard.bindings]]
+chars = "\u001B[B"
+key = "J"
+mods = "ALT"
+
+[[keyboard.bindings]]
+chars = "\u001B[D"
+key = "H"
+mods = "ALT"
+
+[[keyboard.bindings]]
+chars = "\u001B[C"
+key = "L"
+mods = "ALT"
+
+# --------- delete word ---------
+[[keyboard.bindings]]
+chars = "\u0017"
+key = "Back"
+mods = "Control"
+
+# --------- new terminal ---------
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "N"
+mods = "Control|Shift"
+
+# --------- paste copy ---------
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+# ------------------
+# https://stackoverflow.com/a/42461580
+# https://github.com/oryband/dotfiles/blob/af4d45734e7eca30457f5025567221b91ed7f208/.config/alacritty/alacritty.yml#L21
+
+# Control+Return
+[[keyboard.bindings]]
+chars = "\u001B[13;5u"
+key = "Return"
+mods = "Control"
+
+# Shift + Return
+# [[keyboard.bindings]]
+# chars = "\u001B[13;2u"
+# key = "Return"
+# mods = "Shift"
+
+# Control+Space
+[[keyboard.bindings]]
+chars = "\u001B[32;5u"
+key = "Space"
+mods = "Control"
+
+# Shift + Space
+# [[keyboard.bindings]]
+# chars = "\u001B[32;2u"
+# key = "Space"
+# mods = "Shift"
+
+
+
+
+# alacritty映射特性：
+# 映射ALT-J为F10,a  映射ALT-K为F10,b
+# - { key: J, mods: ALT, chars: "\x1b[21~a" } # F10,a
+# - { key: K, mods: ALT, chars: "\x1b[21~b" } # F10,b
+# 映射PSReadline的HistorySearchForward为F10,a
+# 映射PSReadline的HistorySearchBackward为F10,b
+# Set-PSReadLineKeyHandler -Chord 'F10,a' -Function HistorySearchForward
+# Set-PSReadLineKeyHandler -Chord 'F10,b' -Function HistorySearchBackward
+# 最终实现：ALT-J为HistorySearchForward, ALT-K为HistorySearchBackward
