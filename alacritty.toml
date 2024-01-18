@@ -8,7 +8,7 @@ import = [
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/gruvbox_dark.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/everforest_dark.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/nightfox.toml",
-  "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/tokyo-night-storm.toml",
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/tokyo-night-storm.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/dracula.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/solarized_dark.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/base16_default_dark.toml",
@@ -17,7 +17,7 @@ import = [
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/github_dark_dimmed.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/kanagawa_dragon.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/zenburn.toml",
-  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/catppuccin_frappe.toml",
+  "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/catppuccin_frappe.toml",
 
   # light
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/github_light.toml",
