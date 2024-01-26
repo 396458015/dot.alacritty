@@ -89,8 +89,8 @@ hide_when_typing = true
 [keyboard]
 bindings = [
 # scroll
-  {key = "I", mods = "Control|Shift", mode = "~Alt", action = "ScrollLineUp"},
-  {key = "U", mods = "Control|Shift", mode = "~Alt", action = "ScrollLineDown"},
+  {key = "K", mods = "Control|Shift", mode = "~Alt", action = "ScrollLineUp"},
+  {key = "J", mods = "Control|Shift", mode = "~Alt", action = "ScrollLineDown"},
 # move - alt:h,j,k,l
   {key = "K", mods = "ALT", chars = "\u001B[A"},
   {key = "J", mods = "ALT", chars = "\u001B[B"},
