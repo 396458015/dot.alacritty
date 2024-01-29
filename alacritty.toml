@@ -60,6 +60,7 @@ builtin_box_drawing = true
 [cursor]
 style = { shape = "Block", blinking = "Off" } # Block Beam Underline
 unfocused_hollow = true
+thickness = 0.15
 
 [scrolling]
 history    = 10000
@@ -99,7 +100,8 @@ bindings = [
 # delete word
   {key = "Back", mods = "Control", chars = "\u0017"},
 # new terminal
-  {key = "N", mods = "Control|Shift", action = "SpawnNewInstance"},
+  # {key = "N", mods = "Control|Shift", action = "SpawnNewInstance"},
+  {key = "N", mods = "Control|Shift", action = "CreateNewWindow"},
 # paste copy
   {key = "V", mods = "Control|Shift", action = "Paste"},
   {key = "C", mods = "Control|Shift", action = "Copy"},
