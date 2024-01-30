@@ -42,10 +42,10 @@ startup_mode    = "Windowed" # Windowed Fullscreen Maximized
 decorations     = "None" # Full None
 dynamic_padding = false
 dynamic_title   = true
-padding         = { x = 2, y = 2 }
+padding         = { x = 0, y = 0 }
 
 # center_window when font size is 16.0
-position        = { x = 132, y = 30 }
+position        = { x = 132, y = 50 }
 dimensions      = { columns = 110, lines = 32 }
 
 # center_window when font size is 13.0
