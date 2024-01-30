@@ -45,7 +45,7 @@ dynamic_title   = true
 padding         = { x = 2, y = 2 }
 
 # center_window when font size is 16.0
-position        = { x = 132, y = 20 }
+position        = { x = 132, y = 30 }
 dimensions      = { columns = 110, lines = 32 }
 
 # center_window when font size is 13.0
