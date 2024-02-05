@@ -32,6 +32,7 @@ working_directory  = "C:/Users/ThinkPad/Desktop/"
 
 [env]
 TERM = "alacritty"
+COLORTERM = "truecolor"
 
 [shell]
 program = 'C:\Program Files\PowerShell\7\pwsh.exe'
