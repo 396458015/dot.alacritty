@@ -17,6 +17,7 @@ import = [
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/github_dark_dimmed.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/kanagawa_dragon.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/zenburn.toml",
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/catppuccin_mocha.toml",
   "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/catppuccin_frappe.toml",
 
   # light
@@ -80,9 +81,32 @@ duration  = 0
 [colors]
 draw_bold_text_with_bright_colors = true
 transparent_background_colors     = true
-primary = { background = '#1e1e2e' }
-cursor  = { cursor = '#abb2bf' }
+cursor  = { cursor = '#abb2bf' } # 光标颜色
 vi_mode_cursor = { text = "#1e1e2e", cursor = "#b96167"}
+
+[colors.primary]
+background = '#1e1e2e' # 背景颜色
+foreground = '#abb2bf' # 字体颜色
+
+[colors.normal]
+black   = '#0C0C0C'   # black
+red     = '#C50F1F'   # red
+green   = '#13A10E'   # green
+yellow  = '#C19C00'   # yellow
+blue    = '#0037DA'   # blue
+magenta = '#881798'   # purple
+cyan    = '#3A96DD'   # cyan
+white   = '#CCCCCC'   # white
+
+[colors.bright]
+black   = '#767676'  # black
+red     = '#E74856'  # red
+green   = '#16C60C'  # green
+yellow  = '#F9F1A5'  # yellow
+blue    = '#3B78FF'  # blue
+magenta = '#B4009E'  # purple
+cyan    = '#61D6D6'  # cyan
+white   = '#F2F2F2'  # white
 
 [colors.search]
 focused_match = { foreground = "#44475A", background = "#d94453" }
