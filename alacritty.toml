@@ -39,7 +39,7 @@ COLORTERM = "truecolor"
 program = 'C:\Program Files\PowerShell\7\pwsh.exe'
 
 [window]
-opacity         = 0.92
+opacity         = 0.90
 startup_mode    = "Windowed" # Windowed Fullscreen Maximized
 decorations     = "None" # Full None
 dynamic_padding = false
@@ -47,16 +47,16 @@ dynamic_title   = true
 padding         = { x = 2, y = 2 }
 
 # center_window when font size is 16.0
-position        = { x = 132, y = 50 }
-dimensions      = { columns = 110, lines = 32 }
+# position        = { x = 132, y = 50 }
+# dimensions      = { columns = 110, lines = 32 }
 
 # center_window when font size is 13.0
-# position        = { x = 190, y = 90 }
-# dimensions      = { columns = 128, lines = 36 }
+position        = { x = 190, y = 90 }
+dimensions      = { columns = 128, lines = 36 }
 
 [font]
-size                = 16.0
-# size                = 13.0
+# size                = 16.0
+size                = 13.0
 normal              = { family = "Delugia Mono", style = "Regular" }
 bold                = { family = "Delugia Mono", style = "Bold" }
 italic              = { family = "Delugia Mono", style = "Italic" }
