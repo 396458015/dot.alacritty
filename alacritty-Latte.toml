@@ -41,7 +41,7 @@ program = 'C:\Program Files\PowerShell\7\pwsh.exe'
 [window]
 opacity         = 1.00
 startup_mode    = "Windowed" # Windowed Fullscreen Maximized
-decorations     = "None" # Full None
+decorations     = "Full" # Full None
 dynamic_padding = false
 dynamic_title   = true
 padding         = { x = 2, y = 2 }
