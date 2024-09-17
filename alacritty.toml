@@ -1,6 +1,7 @@
 # theme
 import = [
   # dark
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/ubuntu.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/gruvbox_material_medium_dark.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/catppuccin_macchiato.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/catppuccin_mocha.toml",
@@ -37,6 +38,7 @@ COLORTERM = "truecolor"
 
 [shell]
 program = 'C:\Program Files\PowerShell\7\pwsh.exe'
+# program= "ubuntu"
 
 [window]
 opacity         = 1.00
