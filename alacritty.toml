@@ -1,7 +1,6 @@
 # theme
-import = [
+general.import = [
   # dark
-  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/ubuntu.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/gruvbox_material_medium_dark.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/catppuccin_macchiato.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/catppuccin_mocha.toml",
@@ -19,34 +18,34 @@ import = [
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/kanagawa_dragon.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/zenburn.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/catppuccin_mocha.toml",
-  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/catppuccin_frappe.toml",
+  "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/catppuccin_frappe.toml",
 
   # light
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/github_light.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/rose-pine-dawn.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/papercolor_light.toml",
   # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/ayu_light.toml",
-  "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/catppuccin_latte.toml",
+  # "C:/Users/ThinkPad/AppData/Roaming/alacritty/themes/catppuccin_latte.toml",
 ]
 
-live_config_reload = true
-working_directory  = "C:/Users/ThinkPad/Desktop/"
+general.live_config_reload = true
+general.working_directory  = "C:/Users/ThinkPad/Desktop/"
 
 [env]
 TERM = "alacritty"
 COLORTERM = "truecolor"
 
-[shell]
+[terminal.shell]
 program = 'C:\Program Files\PowerShell\7\pwsh.exe'
-# program= "ubuntu"
 
 [window]
-opacity         = 1.00
+opacity         = 0.90
 startup_mode    = "Windowed" # Windowed Fullscreen Maximized
-decorations     = "Full" # Full None
+decorations     = "Transparent" # Full None Transparent Buttonless
 dynamic_padding = false
 dynamic_title   = true
 padding         = { x = 2, y = 2 }
+blur            = true
 
 # center_window when font size is 16.0
 # position        = { x = 132, y = 50 }
@@ -83,10 +82,12 @@ duration  = 0
 [colors]
 draw_bold_text_with_bright_colors = true
 transparent_background_colors     = true
-cursor  = { cursor = '#6c6f85' } # 光标颜色 (Latte)
+cursor  = { cursor = '#abb2bf' } # 光标颜色 (Frappe)
+vi_mode_cursor = { text = "#1e1e2e", cursor = "#b96167"}  # (Frappe)
 
 [colors.primary]
-background = '#eeeeee' # 背景颜色 (Latte)
+background = '#1e1e2e' # 背景颜色 (Frappe)
+foreground = '#abb2bf' # 字体颜色  (Frappe)
 
 [colors.normal]
 black   = '#0C0C0C'   # black
@@ -102,7 +103,7 @@ white   = '#CCCCCC'   # white
 black   = '#767676'  # black
 red     = '#E74856'  # red
 green   = '#16C60C'  # green
-yellow  = '#ff7a00'  # yellow
+yellow  = '#e6cf00'  # yellow
 blue    = '#3B78FF'  # blue
 magenta = '#B4009E'  # purple
 cyan    = '#61D6D6'  # cyan
