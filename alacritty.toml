@@ -39,7 +39,7 @@ COLORTERM = "truecolor"
 program = 'C:\Program Files\PowerShell\7\pwsh.exe'
 
 [window]
-opacity         = 0.90
+opacity         = 0.96
 startup_mode    = "Windowed" # Windowed Fullscreen Maximized
 decorations     = "Transparent" # Full None Transparent Buttonless
 dynamic_padding = false
